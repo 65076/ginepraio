@@ -14,25 +14,33 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <h3>Pagina di Login<br/></h3>
+        <h1>Tuttocalcetto - Pagina di Login</h1>
+        <!-- sezione di navigazione -->    
+        <nav>
+            <h2>Naviga nel sito</h2>
+            <a href="descrizione.html">Descrizione
+                </a>
+            <a href="cliente.html">Area cliente
+                </a>
+            <a href="venditore.html">Area venditore
+                </a>
+        </nav>      
+        <h3>Login</h3>
+        <!-- form di login -->
         <form action='login.html' method="get">
-            <label for="utente">nome utente</label>
-            <input type="text" name="utente"
-                   id="utente" value="username" />
-            <br/>
-            <label for="pswd">password</label>
-            <input type="password" name="pswd"
-                   id="pswd" value="password" />
-            <br/>
-        </form>
-        <br/>
-        <h3>Naviga nel sito</h3>
-        <a href="descrizione.html">Descrizione<br/>
-            </a>
-        <a href="cliente.html">Area cliente<br/>
-            </a>
-        <a href="venditore.html">Area venditore<br/>
-            </a>
-        
+            <div>
+                <label for="utente">nome utente</label>
+                <input type="text" name="utente"
+                       id="utente" value="username" />
+            </div>
+            <div>
+                <label for="pswd">password</label>
+                <input type="password" name="pswd"
+                       id="pswd" value="password" />
+            </div>
+            <div>
+                <input type="submit" value="Invia">
+            </div>
+        </form>            
     </body>
 </html>
