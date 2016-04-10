@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Area venditore - Tutto calcetto - tutto per la tua squadra di calcetto</title>
+        <meta name="keywords" content="tuttocalcetto, area venditore, calcio, calcetto, calcio a 5, palloni, scarpe, scarpette, maglie, magliette">
+        <meta name="description" content="Area venditore tuttocalcetto ">
+        <meta name="author" content="Giovanni Atzori">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
+    </head>
+    <body>
+        <div id="page">
+            <header>
+                <div id="logo">
+                    <h1>*** Tuttocalcetto *** Area venditore ***</h1>
+                </div>
+            </header>
+            <!-- sezione di navigazione -->
+            <div id="sidebar">
+                <ul>
+                    <li id="naviga">
+                        <h2>Naviga nel sito</h2>
+                    </li>
+                    <li>
+                        <a href="descrizione.html">Descrizione</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="content">
+
+                <h2 id="vend_decentrato">Inserimento nuovo prodotto</h2>
+                <p id="paragr_1_vend">Per vendere un prodotto compila il form sottostante in tutti i suoi campi</p>
+
+                <!-- form per inserimento prodotti -->
+                <div class="panel">
+                    <form action='venditore.html' method="get">
+                        <div>
+                            <label for="nome_oggetto">Nome oggetto</label>
+                            <input type="text" name="nome_oggetto"
+                                   id="nome_oggetto" value="" />
+                        </div>
+                        <div>
+                            <label for="immagine">URL immagine</label>
+                            <input type="url" name="immagine"
+                                   id="immagine" value="" />
+                        </div>
+                        <div>
+                            <label for="descrizione">Descrizione oggetto</label>
+                            <textarea rows="4" cols="20" name="descrizione"
+                                      id="descrizione" >
+                            </textarea>
+                        </div>
+                        <div>
+                            <label for="prezzo">Prezzo</label>
+                            <input type="number" name="prezzo" step="0.1"
+                                   id="prezzo" value="" />
+                        </div>
+                        <div>
+                            <label for="disponibili">Pezzi disponibili</label>
+                            <input type="number" name="disponibili"
+                                   id="disponibili" value="" />
+                        </div> 
+                        <div id="invia_bottone">
+                            <input type="submit" value="Invia">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <footer>
+                <p>
+                    Questo sito è stato creato da: Giovanni Atzori Matricola:65076
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>
